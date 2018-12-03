@@ -1,16 +1,8 @@
-
-# Patrick Mogianesi
-# Updated /Augest 24 2016/
-
-# This stack  overflow helped http://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list-with-python
-
 #Import libraries
 import time
 import webbrowser
 import random
 import os
-
-
 
 #Check if the user has the YT.txt file in the same area as alarm.py
 if os.path.isfile("YT.txt") == False:
@@ -29,7 +21,7 @@ Alarm = raw_input("> ")
 #I first need to state the Time variable so it's usable in the while-loop
 Time = time.strftime("%H:%M")
 
-#This opens the text file with the youtube links
+#This opens the text file with the links
 with open("YT.txt") as f:
 	#the urls are stored in the content variable 
 	content = f.readlines()
